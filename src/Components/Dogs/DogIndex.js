@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import DogDisplay from './DogDisplay';
 import {Alert, Button, Container, Row, Col} from 'reactstrap';
+import DogDisplay from './DogDisplay';
 
 export default class Fetch extends Component {
 

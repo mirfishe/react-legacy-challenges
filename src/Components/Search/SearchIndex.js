@@ -38,7 +38,7 @@ class SearchIndex extends Component {
 
   return (
      <div>
-       <Input type="text" id="search" placeholder="Search Here" value={this.state.searchTerm}  onChange={this.searchFunction} />
+       <Input type="text" id="search" placeholder="Search Here" value={this.state.searchTerm} onChange={this.searchFunction} />
        <h3>Results:</h3>
        <Results results={this.state.results}  />
      </div>
