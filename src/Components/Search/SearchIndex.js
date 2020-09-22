@@ -24,8 +24,8 @@ class SearchIndex extends Component {
   for (let i = 0; i < this.state.things.length; i++) {
       // console.log('this.state.things[i]', this.state.things[i]);
       if (this.state.things[i].includes(this.state.searchTerm)) {
-      searchResults.push(this.state.things[i]);
-    };
+        searchResults.push(this.state.things[i]);
+      };
   };
 
   this.setState({results: searchResults});
@@ -38,7 +38,7 @@ class SearchIndex extends Component {
 
   return (
      <div>
-       <Input type='text' id='search' placeholder='Search Here' value={this.state.searchTerm}  onChange={this.searchFunction} />
+       <Input type="text" id="search" placeholder="Search Here" value={this.state.searchTerm}  onChange={this.searchFunction} />
        <h3>Results:</h3>
        <Results results={this.state.results}  />
      </div>
